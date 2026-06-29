@@ -77,3 +77,9 @@ This is a starting point. The repo currently contains:
 - a minimal statistics engine for SKOS concept counts, label counts, hierarchy
   depth, and simple geometry classification.
 
+## Feedback
+
+VocStat is a personal project in active development, but thoughtful feedback is
+welcome. If you find an error, have a source to suggest, or want to discuss a
+possible statistic or SHACL observation, please raise an issue.
+
