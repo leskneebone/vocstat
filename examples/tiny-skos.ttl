@@ -1,0 +1,29 @@
+@prefix ex: <https://example.org/vocab/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+ex:scheme
+    a skos:ConceptScheme ;
+    skos:prefLabel "Tiny example vocabulary"@en ;
+    skos:hasTopConcept ex:animals .
+
+ex:animals
+    a skos:Concept ;
+    skos:prefLabel "Animals"@en ;
+    skos:definition "Living organisms that feed on organic matter."@en ;
+    skos:topConceptOf ex:scheme ;
+    skos:inScheme ex:scheme ;
+    skos:narrower ex:mammals , ex:birds .
+
+ex:mammals
+    a skos:Concept ;
+    skos:prefLabel "Mammals"@en ;
+    skos:altLabel "Mammalia"@en ;
+    skos:broader ex:animals ;
+    skos:inScheme ex:scheme .
+
+ex:birds
+    a skos:Concept ;
+    skos:prefLabel "Birds"@en ;
+    skos:broader ex:animals ;
+    skos:inScheme ex:scheme .
+

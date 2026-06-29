@@ -1,0 +1,47 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vocstat: <https://w3id.org/vocstat/ns#> .
+
+vocstat:ConceptInformationShape
+    a sh:NodeShape ;
+    sh:targetClass skos:Concept ;
+    sh:name "SKOS concept information" ;
+    sh:description "Informational observations for SKOS concepts. VocStat treats these as vocabulary intelligence rather than validation failure." ;
+    sh:property
+        vocstat:PrefLabelInformationShape ,
+        vocstat:AltLabelInformationShape ,
+        vocstat:BroaderInformationShape ,
+        vocstat:DefinitionInformationShape .
+
+vocstat:PrefLabelInformationShape
+    a sh:PropertyShape ;
+    sh:path skos:prefLabel ;
+    sh:name "Preferred labels" ;
+    sh:description "Reports concepts without a preferred label so vocabulary owners can inspect naming coverage." ;
+    sh:minCount 1 ;
+    sh:severity sh:Info .
+
+vocstat:AltLabelInformationShape
+    a sh:PropertyShape ;
+    sh:path skos:altLabel ;
+    sh:name "Alternative labels" ;
+    sh:description "Reports alternative label coverage. Absence is informational, not automatically a defect." ;
+    sh:minCount 1 ;
+    sh:severity sh:Info .
+
+vocstat:BroaderInformationShape
+    a sh:PropertyShape ;
+    sh:path skos:broader ;
+    sh:name "Broader concept links" ;
+    sh:description "Reports concepts without a broader concept, useful for distinguishing top concepts from disconnected terms." ;
+    sh:minCount 1 ;
+    sh:severity sh:Info .
+
+vocstat:DefinitionInformationShape
+    a sh:PropertyShape ;
+    sh:path skos:definition ;
+    sh:name "Definitions" ;
+    sh:description "Reports definition coverage for concept-level explanatory richness." ;
+    sh:minCount 1 ;
+    sh:severity sh:Info .
+
