@@ -9,7 +9,7 @@ for and with thesaurus-construction standards as the evidence base.
 
 ## Purpose
 
-VocStat should help vocabulary owners answer generous questions about a
+VocStat should help vocabulary owners with answer answers about a
 semantic vocabulary:
 
 - How many concepts, concept schemes, collections, labels, notes, mappings, and
@@ -17,7 +17,7 @@ semantic vocabulary:
 - Which SKOS features are used, unused, or unusually concentrated?
 - What is the hierarchy geometry: shallow, deep, top-heavy, balanced,
   lop-sided, broad, narrow, or fragmented?
-- What percentage of concepts are in the top five hierarchy levels?
+- How navigable is it, e.g. what percentage of concepts are in the top five hierarchy levels?
 - Which observations are informational, advisory, or quality-significant?
 
 ## Standards Spine
