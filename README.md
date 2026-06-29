@@ -83,3 +83,4 @@ VocStat is a personal project in active development, but thoughtful feedback is
 welcome. If you find an error, have a source to suggest, or want to discuss a
 possible statistic or SHACL observation, please raise an issue.
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the current contribution approach.
