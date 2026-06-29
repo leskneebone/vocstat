@@ -1,5 +1,9 @@
 # VocStat
 
+<p align="center">
+  <img src="docs/assets/logo.png" alt="VocStat logo" width="180">
+</p>
+
 Vocabulary Statistics: an informational SHACL profile, validator, specification,
 and application toolkit for understanding semantic vocabularies.
 
@@ -9,7 +13,7 @@ for and with thesaurus-construction standards as the evidence base.
 
 ## Purpose
 
-VocStat should help vocabulary owners with answer answers about a
+VocStat should help vocabulary owners answer generous questions about a
 semantic vocabulary:
 
 - How many concepts, concept schemes, collections, labels, notes, mappings, and
@@ -39,6 +43,7 @@ links, access notes, and candidate secondary literature.
 
 ```text
 docs/
+  assets/logo.png                 VocStat logo for README and project surfaces
   spec-outline.md                 Draft shape of the VocStat specification
   standards-and-literature.md     Source register and acquisition notes
 examples/
