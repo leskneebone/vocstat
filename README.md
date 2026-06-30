@@ -84,3 +84,9 @@ welcome. If you find an error, have a source to suggest, or want to discuss a
 possible statistic or SHACL observation, please raise an issue.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the current contribution approach.
+
+## License
+
+VocStat is public for review, citation, discussion, and professional portfolio
+purposes, but it is not open source at this stage. See
+[LICENSE.md](LICENSE.md) for the current terms.
